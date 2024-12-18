@@ -1,0 +1,57 @@
+/* styles.css */
+
+/* Problema: No se define un esquema de colores claro */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Problema: Uso de un color que puede ser demasiado claro */
+    color: #333; /* Problema: Contraste insuficiente con el fondo */
+}
+
+header {
+    background-color: #ccc; /* Problema: Falta de contraste con el texto */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007BFF; /* Problema: Color sin consideración de accesibilidad */
+}
+
+main section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Problema: Uso de bordes poco visibles */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%; /* Problema: Aplicado sin considerar el contexto */
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF; /* Problema: Color de botón que no resalta suficientemente */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd; /* Problema: Color similar al texto del pie de página */
+    font-size: 0.8em;
+}
